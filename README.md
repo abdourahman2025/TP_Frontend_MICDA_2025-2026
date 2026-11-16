@@ -33,7 +33,9 @@ Les dates et le lien de candidature de la bannière sont des exemples.
 
 ## Instructions pour exécuter le projet
 
-1. Télécharger tous les fichiers du projet dans le même dossier.
-2. Ouvrir le fichier `paged'accueil.html` avec un navigateur web (Edge, Chrome,...).
+1. Page en ligne : https://seydinaalioudiakite.github.io/TP_Frontend_MICDA_2025-2026/paged'accueil.html
+oubien 
+2.Télécharger tous les fichiers du projet dans le même dossier.
+2.1 Ouvrir le fichier `paged'accueil.html` avec un navigateur web (Edge, Chrome,...).
 
 Aucune installation n'est nécessaire.
