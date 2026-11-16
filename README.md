@@ -1,12 +1,15 @@
-# TP Frontend — Master MICDA 2025-2026
+# Page universite
 
-Ce repository est destiné au dépôt des projets de TP Frontend des étudiants du Master MICDA.
+## Présentation
+Ce projet consiste à reproduire la page d'accueil du site de l'Université Numérique Cheikh Hamidou Kane (UN-CHK).
 
-## Consignes
+## Réalisé par
+Siga Ndour
 
-- Chaque étudiant ou groupe doit créer sa propre branche.
-- Déposer les fichiers sources du projet.
-- Ajouter un README.md décrivant le projet et ses membres.
-- Créer une Pull Request vers la branche main pour soumettre le travail.
+## Technologies utilisées
+- HTML
+- CSS
+- JavaScript
 
-Enseignant : Dr Abdourahmane BALDÉ
+## Exécution du projet
+Ouvrir le fichier index.html dans un navigateur web.
