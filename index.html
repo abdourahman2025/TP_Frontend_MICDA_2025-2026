@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN-CHK - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="image/Logo_UN.PNG" alt="Logo UN-CHK" width="200">
+
+    <!-- En-tête du site -->
+    <header class="entete">
+
+        <a href="index.html" class="logo">
+            UN-CHK
+            <span>Université numérique<br>Cheikh Hamidou Kane</span>
+        </a>
+
+        <button class="menu-mobile" id="menuMobile"
+                aria-label="Ouvrir le menu">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a class="actif" href="index.html">ACCUEIL</a>
+
+            <div class="menu-deroulant">
+                <button class="menu-bouton">INSTITUTION ▾</button>
+                <div class="sous-menu">
+                    <a href="#institution">Présentation</a>
+                    <a href="#institution">Organisation</a>
+                    <a href="#institution">Contact</a>
+                </div>
+            </div>
+
+            <div class="menu-deroulant">
+                <button class="menu-bouton">FORMATIONS ▾</button>
+                <div class="sous-menu">
+                    <a href="#formations">Licences</a>
+                    <a href="#formations">Masters</a>
+                    <a href="#formations">Formation continue</a>
+                </div>
+            </div>
+
+            <a href="#actualites">ACTUALITÉS</a>
+            <a href="#recherche">RECHERCHE</a>
+            <a href="#etudiants">VIE ÉTUDIANTE</a>
+            <a href="#contact">CONTACT</a>
+
+            <button type="button" id="boutonRecherche" class="recherche"> 🔍 </button>
+        </nav>
+    </header>
+
+    <!-- Zone de recherche -->
+    <form id="zoneRecherche" class="form-recherche" hidden>
+        <input type="search" id="champRecherche"
+               placeholder="Rechercher sur cette page...">
+        <button type="submit">Rechercher</button>
+        <p id="resultatRecherche"></p>
+    </form>
+
+    <!-- Bannière principale -->
+    <main>
+        <section class="banniere">
+            <img src="image/logo.png" alt="Logo UN-CHK" class="logo-banniere">
+
+            <div class="contenu-banniere">
+                <p class="petit-titre">FORMATION CONTINUE</p>
+
+                <h1>APPEL À CANDIDATURES</h1>
+
+                <h2>
+                    Recrutement d'auditeurs pour la formation continue
+                    <br>
+                    Année académique 2025/2026
+                </h2>
+
+                <div class="date rouge">
+                    Prolongation jusqu'au
+                </div>
+
+                <div class="date bleu">
+                    samedi 03 octobre à 23h59
+                </div>
+
+                <div class="phases">
+                    <p><strong>Phase 1 :</strong> Licence 1 et Master 1</p>
+                    <p><strong>Phase 2 :</strong> Licence 2 et 3, Master 2,</p>
+                    <p>Certificats et Capacité 2 en Droit</p>
+                </div>
+
+                <a class="bouton-postuler"
+                   href="https://admission.unchk.sn/"
+                   target="_blank" rel="noopener noreferrer">
+                    Postulez ici →
+                </a>
+            </div>
+
+            <div class="etiquette">
+                <span>FORMATION</span>
+                <strong>100 %</strong>
+                <span>en ligne</span>
+                <p>Accessible où que vous soyez</p>
+            </div>
+
+        </section>
+
+        <!-- Sections de démonstration -->
+        <section id="institution" class="section">
+            <h2>Notre institution</h2>
+            <p>Découvrez l'université et son organisation.</p>
+        </section>
+
+        <section id="formations" class="section">
+            <h2>Nos formations</h2>
+            <p>Découvrez les formations proposées.</p>
+        </section>
+
+        <section id="actualites" class="section">
+            <h2>Actualités</h2>
+            <p>Les informations de l'université.</p>
+        </section>
+
+        <section id="recherche" class="section">
+            <h2>Recherche</h2>
+            <p>Découvrez les activités de recherche.</p>
+        </section>
+
+        <section id="etudiants" class="section">
+            <h2>Vie étudiante</h2>
+            <p>Informations destinées aux étudiants.</p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        © 2026 - Site de démonstration inspiré de l'UN-CHK
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
