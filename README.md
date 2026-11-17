@@ -1,12 +1,28 @@
 # TP Frontend — Master MICDA 2025-2026
+Conception de la page d'acceuil du site web de l'université Numérique Cheikh Hamidou Kâne (UNCHK)
 
-Ce repository est destiné au dépôt des projets de TP Frontend des étudiants du Master MICDA.
+# Membre du groupe
+Mouhamadou Al Fadel Fall
 
-## Consignes
+# Description
 
-- Chaque étudiant ou groupe doit créer sa propre branche.
-- Déposer les fichiers sources du projet.
-- Ajouter un README.md décrivant le projet et ses membres.
-- Créer une Pull Request vers la branche main pour soumettre le travail.
+Ce projet a été réalisé dans le cadre du TP Frontend. Il consiste à développer une interface web simple et fonctionnelle.
 
-Enseignant : Dr Abdourahmane BALDÉ
+# Technologies utilisées
+
+HTML
+
+CSS
+
+JavaScript
+
+# Exécution du projet
+
+Télécharger ou cloner le projet.
+
+Ouvrir le dossier dans VS Code.
+
+Lancer le fichier index.html dans un navigateur.
+
+# Enseignant : 
+Dr Abdourahmane BALDÉ

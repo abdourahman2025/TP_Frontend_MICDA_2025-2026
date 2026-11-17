@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCHK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+        <header class="menu-container">
+        <menu id = "menu-principal">
+            <li><a href="#"></a><img id="logo" src="img/Logo_UN.png" alt="recherche"></li>
+            <li> <a class="element" href="#">ACCEUIL</a></li>
+            <li> 
+                <a class="element" href="#">INSTITUTION</a>
+
+                <ul class="sous-menu">
+                    <li><a href="#">Mot du récteur</a></li>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Gouvernance</a></li>
+                    <li><a href="#">Organigramme</a></li>
+                    <li><a href="#">L'université en chiffres</a></li>
+                    <li><a href="#">Direction & pôle</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a class="element" href="#">FROMATIONS</a>
+            
+                <ul class="sous-menu">
+                    <li><a href="#">Formation initial</a></li>
+                    <li><a href="#">Formation continue</a></li>
+                    <li><a href="#">Modèle pédagogique</a></li>
+                    <li><a href="#">Admission</a></li>
+                </ul>
+            </li>
+
+
+            <li><a class="element" href="#">ACTUALITES</a></li>
+
+            <li>
+                <a class="element" href="#">RECHERCHE</a>
+                <ul class="sous-menu">
+                    <li><a href="#">Pôle innovation et politique pour le développement</a></li>
+                    <li><a href="#">Formation continue</a></li>
+                    <li><a href="#">Chercheur</a></li>
+                    <li><a href="#">Ecole doctoral</a></li>
+                    <li><a href="#">Ressources humaines</a></li>    
+                </ul>
+            </li>
+
+            <li>
+                <a class="element" href="#">VIE ETUDIANTE</a>
+                <ul class="sous-menu">
+                    <li><a href="#">Représentation estudiantine</a></li>
+                    <li><a href="#">Présentaion des BENO, CRENO, FNE-UN</a></li>
+                    <li><a href="#">Vie associative</a></li>
+                    <li><a href="#">MSE-UNCHK</a></li>
+                    <li><a href="#">ASC ENO</a></li>    
+                </ul>
+
+            </li>
+
+
+            <li><a class="element" href="#">CONTACT</a></li>
+
+            <li> <button class="element">
+                     <span class="label"></span>
+                        <span class="icon">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+                        <path d="M1 1h16M1 7h12M1 13h8"/>
+                        </svg>
+                    </span>
+                </button>
+            </li>
+                <ul class="sous-menu">
+                    
+                <li>
+                        
+                    
+                </ul>
+                
+            </li>
+
+            <li>
+                 <img id="recherche" src="img/rechercher.png" alt="">
+                </a>
+                <ul class="sous-menu">
+                <div id="search">
+                    <form  action="/recherche" method="get"></form>
+                    <input type="search">
+                    <button type="submit">Rechercher</button>
+                </div>
+                </ul>
+            </li>
+                
+            
+        </menu>
+    </header>
+
+
+    <div class="slider">
+
+        <div class="slides">
+
+            <img src="img/crunch2.jfif" class="slide active" alt="Image 1">
+
+            <img src="img/crunch1.jpg" class="slide" alt="Image 2">
+
+            <img src="img/crunch2.jfif" class="slide" alt="Image 3">
+            <img src="img/Agenda-election-2026.jpg" class="slide" alt="Image 3">
+
+        </div>
+
+        <button class="prev" onclick="changerSlide(-1)">❮</button>
+
+        <button class="next" onclick="changerSlide(1)">❯</button>
+
+    </div>
+
+    <div class="section1">
+        <div class="formation">
+            <img src="img/formation.png" alt="">
+            <p>NOS FROMATIONS</p>
+        </div>
+        <div class="admission">
+            <img src="img/admission.png" alt="">
+            <p>ADMISSION</p>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div>
+            <p>Vision</p>
+        </div>
+        <div>
+            <p>Valeurs</p>
+        </div>
+        <div>
+            <p>Axes Stratégiques</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+<!-- /section-articles -->
+
+
+<h2 class="sous-titres">ACTUALITES</h2>
+
+<section class="actualites">
+
+    <article class="article">
+        <img src="img/img1.jpg" alt="Étudiants en formation">
+
+        <h3>Rentrée universitaire 2026-2027</h3>
+
+        <p>
+            Découvrez toutes les informations concernant
+            la nouvelle rentrée universitaire.
+        </p>
+
+        <a href="#">Lire la suite</a>
+    </article>
+
+    <article class="article">
+        <img src="img/img2.jpg" alt="Formation en ligne">
+
+        <h3>Les formations disponibles</h3>
+
+        <p>
+            Découvrez les différentes formations proposées
+            par notre université.
+        </p>
+
+        <a href="#">Lire la suite</a>
+    </article>
+
+    <article class="article">
+        <p class="comunique">
+            Participation de l’UN-CHK au concours 
+            « Ma thèse en 180 secondes » (MT180S) Édition 2026
+            <time datetime="2026-11-07">29 octobre 2026</time><br><br>
+        </p>
+        <p class="comunique">
+            Amphithéâtre de rentrée de la Formation <br>
+            continue au titre de l’année<br>
+            académique 2026-2027<br><br>
+            <time datetime="2026-11-07">29 octobre 2026</time><br><br>
+        </p>
+        <p class="comunique">
+            Lancement de la deuxième phase <br>
+            de distribution des kits de connectivité<br>
+            à l’intention des étudiants<br>
+            de la Promotion 13<br><br>
+            <time datetime="2026-11-07">28 octobre 2026</time><br><br>
+        </p>
+        <p class="comunique">
+            Les « Rendez-vous de la Recherche »<br>
+            – atelier en ligne sur l’appropriation <br>
+            du nouveau guide du CAMES<br><br>
+            <time datetime="2026-11-07">27 octobre 2026</time>
+        </p>
+    </article>
+
+</section>
+
+<section id="unchk-chiffres">
+    <div class="chiffre1">
+        <div class="conteneur-texte">
+            <h3>1ère</h3>
+            <p>Université publique numérique</p>
+        </div>
+        <img src="img/cap1.PNG" alt="">
+    </div>
+
+    <div class="chiffre2">
+        <div  class="conteneur-texte">
+            <h3>19</h3>
+            <p>Licences</p>
+        </div>
+        <img src="img/cap2.PNG" alt="">
+    </div>
+
+    <div class="chiffre3">
+        <div class="conteneur-texte">
+            <h3>26</h3>
+            <p>Marsters</p>
+        </div>
+        <img src="img/cap3.PNG" alt="">
+    </div>
+</section>
+
+
+<div class="conteneur-chiffres"> 
+        
+    <div class="pc">
+        <h3>73797</h3>
+        <p>Étudiants</p>
+    </div>
+    <div class="pc">
+        <h3>425</h3>
+        <p>PATS</p>
+    </div>
+    <div class="pc">
+        <h3>536</h3>
+        <p>Enseignants associés</p>
+    </div>
+    <div class="pc">
+        <h3>638</h3>
+        <p>Tuteurs</p>
+    </div>
+</div>
+
+<div id="voir-plus">
+    <a href="#">Plus de chiffres</a>
+</div>
+
+<div id="bloc-principal">
+    <div class="bloc1">
+        <h3>Vie estudiantine</h3>
+        <div class="sous-bloc">
+        <a href="#">en savoir plus</a>
+        </div>
+    </div>
+    <div class="bloc2">
+        <div class="sous-bloc1">
+            <a href="#">Coupe du Récteur -> </a>
+        </div>
+        <div class="sous-bloc2">
+            <h3>Nos étudiants créent une comunauté dynamique et inckusive</h3>
+        </div>
+    </div>
+    <div class="bloc3">
+        
+    </div>
+</div>
+<footer>
+    <ul>
+        <h3>A PROPOS DE L'UN-CHK</h3>
+        <li>Présentation</li>
+        <li>Gouvernance</li>
+        <li>Organigramme</li>
+        <li>Directions et Pôles</li>
+    </ul>
+    </ul>
+    <ul>
+        <h3>NOS FORMATIONS</h3>
+        <li>Formation initiale</li>
+        <li>Formation continue</li>
+    </ul>
+    <ul>
+        <h3>Liens Utiles</h3>
+        <li>MESRI</li>
+        <li>ANSTS</li>
+        <li>CAMES</li>
+        <li>ANAQ-Sup</li>
+        <li>AUF</li>
+    </ul>
+    <ul>
+        <h3>CONTACT</h3> 
+ 
+        <li>Cité du savoir – Diamniadio, Castors,<br>
+            avenue Bourguiba, rue n°13</li>
+        <li class="mail">+221 30 108 41 53</li>
+        <li class="mail">contact@unchk.edu.sn</li>
+    </ul>
+</footer>
+
+<nav class="menu">
+
+        <a href="#">
+            <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="#">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="#">
+            <i class="bi bi-youtube"></i>
+        </a>
+        <p class="slogan">Foo Nekk Foofu La !</p>
+
+    </nav>
+    <div class="footer">
+        <p>Copyright © 2025 UN-CHK. Tous les droits sont réservés.</p>
+    </div>
+
+<div class="cursor"></div>
+</body>
+</html>
