@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page d'accueil reproduite en HTML et CSS pour l'Université numérique Cheikh Hamidou Kane.">
+  <title>Accueil - Université numérique Cheikh Hamidou Kane</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="accueil">
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Accueil UN-CHK">
+      <img src="logo-unchk.png" alt="Université numérique Cheikh Hamidou Kane">
+    </a>
+    <button class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="document.body.classList.toggle('menu-open'); this.setAttribute('aria-expanded', document.body.classList.contains('menu-open'))">☰</button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a class="active" href="#accueil">ACCUEIL</a>
+      <a href="#institution">INSTITUTION <span>⌄</span></a>
+      <a href="#formations">FORMATIONS <span>⌄</span></a>
+      <a href="#actualites">ACTUALITÉS</a>
+      <a href="#recherche">RECHERCHE <span>⌄</span></a>
+      <a href="#vie-etudiante">VIE ÉTUDIANTE <span>⌄</span></a>
+      <a href="#communaute">SERVICE À LA COMMUNAUTÉ <span>⌄</span></a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="header-actions">
+      <button class="menu-label" onclick="document.body.classList.toggle('menu-open')">MENU</button>
+      <button class="round-button blue" aria-label="Options">☰</button>
+      <button class="round-button yellow" aria-label="Rechercher">⌕</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Appel à candidatures pour le Master en Legaltech">
+      <img src="hero-unck.png" alt="Appel à candidatures pour le Master en Legaltech et Pratique du Droit (LEPRAD), date limite le 16 octobre 2026.">
+      <a class="hero-link" href="https://admission.unchk.sn" target="_blank" rel="noopener" aria-label="Déposer une candidature en ligne"></a>
+    </section>
+
+    <section class="quick-section" aria-label="Accès rapides">
+      <div class="quick-links">
+        <a class="quick-card training" id="formations" href="https://www.unchk.sn/" target="_blank" rel="noopener">
+          <span class="quick-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="8" r="7"/><path d="M4 19c7-3 14-2 20 2v22C17 39 10 39 4 42V19Zm40 0c-7-3-14-2-20 2v22c7-4 14-4 20-1V19Z"/></svg>
+          </span>
+          <span class="quick-title">NOS FORMATIONS</span><span class="quick-arrow">→</span>
+        </a>
+        <a class="quick-card admission" href="https://admission.unchk.sn" target="_blank" rel="noopener">
+          <span class="quick-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M3 12a4 4 0 0 1 4-4h13l5 6h16a4 4 0 0 1 4 4v2H15a5 5 0 0 0-4 2L3 33V12Z"/><path d="M2 37 12 23a4 4 0 0 1 3-2h31L36 38a4 4 0 0 1-3 2H5a3 3 0 0 1-3-3Z"/></svg>
+          </span>
+          <span class="quick-title">ADMISSION</span><span class="quick-arrow">→</span>
+        </a>
+      </div>
+      <nav class="values-links" id="institution" aria-label="Liens institutionnels">
+        <a href="#vision">Vision</a><a href="#valeurs">Valeurs</a><a href="#axes">Axes Stratégiques</a>
+      </nav>
+    </section>
+
+    <section class="news-section" id="actualites">
+      <div class="section-heading"><h1>ACTUALITÉS</h1></div>
+      <div class="news-layout">
+        <article class="news-card">
+          <a class="news-image" href="#actualite-kane" aria-label="Lire l'hommage à Cheikh Hamidou Kane"><img src="actualite-kane.jpg" alt="Portrait de Cheikh Hamidou Kane"></a>
+          <div class="news-body">
+            <h2>Rappel à Dieu de M. Cheikh Hamidou KANE, parrain de l'UN-CHK</h2>
+            <p class="date">4 octobre 2026</p>
+            <p>L’Université numérique Cheikh Hamidou Kane (UN-CHK) a appris avec une profonde affliction le rappel à Dieu de son illustre parrain, Monsieur Cheikh Hamidou Kane.</p>
+            <a class="read-more" href="#actualite-kane">Lire la suite <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <a class="news-image formal" href="#actualite-ouya" aria-label="Lire l'article sur le professeur Samuel Ouya"><img src="actualite-ouya.jpg" alt="Portrait officiel d'un enseignant en tenue académique"></a>
+          <div class="news-body">
+            <h2>Pr Samuel OUYA, nommé président de la commission « Innovations pédagogiques, Transition numérique et IA » de la C2R d'Afrique de l'Ouest</h2>
+            <p class="date">2 octobre 2026</p>
+            <p>Le Professeur Samuel OUYA, Recteur de l’Université numérique Cheikh Hamidou Kane (UN-CHK), a été nommé à la présidence de la Commission « Innovations pédagogiques ».</p>
+            <a class="read-more" href="#actualite-ouya">Lire la suite <span>→</span></a>
+          </div>
+        </article>
+
+        <aside class="communiques" id="communiques">
+          <h2><span class="paper-icon" aria-hidden="true">▤</span> <a href="#communiques">COMMUNIQUÉS</a></h2>
+          <a class="communique" href="#communique-1"><span>Lancement de la deuxième phase de distribution des kits de connectivité à l’intention des étudiants de la Promotion 13</span><time datetime="2026-10-16">16 octobre 2026</time></a>
+          <a class="communique" href="#communique-2"><span>Lancement officiel du premier rapport national sur l’IA générative dans l’enseignement supérieur sénégalais par le groupe de recherche ALIVE</span><time datetime="2026-10-14">14 octobre 2026</time></a>
+          <a class="communique" href="#communique-3"><span>Prolongation – appel à candidatures pour une admission au Master international « Métiers de l’Édition Scientifique » (MÉDTS)</span><time datetime="2026-10-01">1 octobre 2026</time></a>
+          <a class="communique" href="#communique-4"><span>Prolongation exceptionnelle des phases 1 et 2 des appels à candidatures pour le recrutement d’auditeurs en formation continue au titre de l’année académique 2025/2026</span><time datetime="2026-09-30">30 septembre 2026</time></a>
+          <a class="more-link" href="#communiques">Plus de communiqués</a>
+        </aside>
+      </div>
+      <a class="more-articles" href="#actualites">Plus d'articles</a>
+    </section>
+
+    <section class="unchk-numbers" aria-labelledby="numbers-title">
+      <div class="numbers-heading"><h2 id="numbers-title">UN-CHK EN CHIFFRES</h2></div>
+      <div class="numbers-visuals">
+        <article class="number-visual first-degree"><img src="chiffres-etudiants-1.jpg" alt="Étudiant de l'UN-CHK" /><div class="number-overlay"><strong></strong><small></small></div></article>
+        <article class="number-visual licences"><img src="chiffres-etudiants-2.jpg" alt="Étudiant souriant" /><div class="number-overlay"><strong></strong><small></small></div></article>
+        <article class="number-visual masters"><img src="chiffres-etudiants-3.jpg" alt="Étudiant présentant les formations" /><div class="number-overlay"><strong></strong><small></small></div></article>
+      </div>
+      <div class="numbers-stats" aria-label="Statistiques de l'université"><div><strong>73 797</strong><span>ÉTUDIANTS</span></div><div><strong>425</strong><span>PATS</span></div><div><strong>536</strong><span>ENSEIGNANTS ASSOCIÉS</span></div><div><strong>638</strong><span>TUTEURS</span></div></div>
+      <a class="more-numbers" href="https://www.unchk.sn/" target="_blank" rel="noopener">Plus de chiffres</a>
+    </section>
+    <section class="student-life" id="vie-etudiante" aria-label="Vie estudiantine et communauté">
+      <a class="life-panel" href="https://www.unchk.sn/" target="_blank" rel="noopener"><span class="life-title">Vie<br>estudiantine</span><span class="life-more">En savoir plus</span><img src="vie-etudiante.jpg" alt="Étudiant sur le campus" /></a>
+      <div class="rector-community"><a class="rector-panel" href="https://www.unchk.sn/" target="_blank" rel="noopener">Coup du Recteur <span>→</span></a><div class="community-panel">Nos étudiants créent une<br class="desktop-break"> communauté dynamique et<br class="desktop-break"> inclusive</div></div>
+      <a class="sport-panel" href="https://www.unchk.sn/" target="_blank" rel="noopener" aria-label="Découvrir la vie sportive étudiante"><img src="sport-etudiant.jpg" alt="Équipe sportive étudiante" /></a>
+    </section>
+  </main>
+  <footer class="site-footer" id="contact">
+    <div class="footer-links">
+      <div><h2>À PROPOS DE L'UN-CHK</h2><a href="#institution">Présentation</a><a href="#institution">Gouvernance</a><a href="#institution">Organigramme</a><a href="#institution">Directions et Pôles</a></div>
+      <div><h2>NOS FORMATIONS</h2><a href="#formations">Formation initiale</a><a href="#formations">Formation continue</a></div>
+      <div><h2>LIENS UTILES</h2><a href="https://mesri.gouv.sn/">MESRI</a><a href="https://www.ants.sn/">ANSTS</a><a href="https://www.cames.org/">CAMES</a><a href="https://anaqsup.sn/">ANAQ-Sup</a><a href="https://auf.org/">AUF</a></div>
+      <div class="footer-contact"><h2>CONTACT</h2><p>Cité du savoir - Diamniadio, Castors,<br> avenue Bourguiba, rue n°13</p><a href="tel:+221301084153">+221 30 108 41 53</a> · <a href="mailto:contact@unchk.edu.sn">contact@unchk.edu.sn</a></div>
+    </div>
+    <div class="social-row" aria-label="Réseaux sociaux"><a href="https://www.facebook.com/" aria-label="Facebook">f</a><a href="https://x.com/" aria-label="X">𝕏</a><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a><a href="https://www.instagram.com/" aria-label="Instagram">◎</a><a href="https://www.youtube.com/" aria-label="YouTube">▶</a><span class="footer-note">© Foo Nekk Foofi La !</span></div>
+    <div class="copyright">Copyright © 2025 UN-CHK. Tous les droits sont réservés.<a href="#accueil" class="back-top" aria-label="Remonter en haut de page">⌃</a></div>
+  </footer>
+</body>
+</html>
