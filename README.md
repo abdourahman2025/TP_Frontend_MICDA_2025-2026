@@ -1,12 +1,32 @@
-# TP Frontend — Master MICDA 2025-2026
+# TP Frontend — Reproduction de la Page d'Accueil de l'UNCHK
 
-Ce repository est destiné au dépôt des projets de TP Frontend des étudiants du Master MICDA.
+    Membre
+- Maïmouna Fall
+- Branche : Maimouna-Fall
+- Master MICDA 2025-2026
 
-## Consignes
+ Description du projet
+Reproduction de la page d'accueil de l'Université Numérique Cheikh Hamidou Kane (UNCHK) réalisée en HTML, CSS et JavaScript dans le cadre du TP Frontend.
 
-- Chaque étudiant ou groupe doit créer sa propre branche.
-- Déposer les fichiers sources du projet.
-- Ajouter un README.md décrivant le projet et ses membres.
-- Créer une Pull Request vers la branche main pour soumettre le travail.
+L'objectif est de reproduire  la structure et le design de la page d'accueil officielle : en-tête avec navigation, section d'accueil / bannière, présentation de l'université, actualités, formations / programmes, et pied de page.
 
-Enseignant : Dr Abdourahmane BALDÉ
+ Fonctionnalités reproduites
+- En-tête avec logo et menu de navigation
+- section / bannière d'accueil
+- Présentation de l'UNCHK
+- Section Actualités 
+- Section Formations / Programmes
+- Pied de page avec liens utiles
+
+   Technologies utilisées
+- HTML
+- CSS
+- JavaScript
+
+ Structure du projet
+- TD/ : fichiers sources du projet (index.html, style.css, script.js, images)
+
+ Comment lancer le projet
+1. Télécharger ou cloner ce dépôt
+2. Ouvrir le dossier `TD`
+3. Ouvrir le fichier `index.html` dans le navigateur
