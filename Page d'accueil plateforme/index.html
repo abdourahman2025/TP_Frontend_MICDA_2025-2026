@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil - UN-CHK</title>
+  <meta name="description" content="Université numérique Cheikh Hamidou Kane - 1ère université publique numérique du Sénégal">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+
+  <!-- Panneau latéral ouvert par le bouton MENU -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="Fermer le menu">&times;</button>
+    <ul>
+  <li><a href="index.html" class="active">Accueil</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#">Institution</a></li>
+  <li><a href="#">Formations</a></li>
+  <li><a href="#actualites">Actualités</a></li>
+  <li><a href="#">Recherche</a></li>
+  <li><a href="#vie">Vie étudiante</a></li>
+  <li><a href="#">Service à la communauté</a></li>
+</ul>
+  </div>
+
+  <!--  EN-TÊTE  -->
+  <div class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="https://www.unchk.sn/wp-content/uploads/2020/02/Logo_UN-Horizontal.png" alt="UN-CHK">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
+      <div class="header-actions">
+        <span class="menu-label">MENU</span>
+        <button class="circle-btn circle-teal" id="drawerOpen" aria-label="Ouvrir le menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14M5 12h10M5 16h7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="search-strip"><button class="circle-btn circle-orange" aria-label="Rechercher"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6" fill="none" stroke="#fff" stroke-width="2"/><path d="M16 16l4 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+      </div>
+
+      <div class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li class="has-sub">
+            <a href="#">Institution</a>
+            <ul class="submenu">
+              <li><a href="#">Mot du Recteur</a></li>
+              <li><a href="#">Présentation</a></li>
+              <li><a href="#">Gouvernance</a></li>
+              <li><a href="#">Organigramme</a></li>
+              <li><a href="#">L'Université en chiffres</a></li>
+              <li><a href="#">Directions &amp; Pôles</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#">Formations</a>
+            <ul class="submenu">
+              <li><a href="#">Formation initiale</a></li>
+              <li><a href="#">Formation continue</a></li>
+              <li><a href="#">Modèle pédagogique</a></li>
+              <li><a href="#">Admission</a></li>
+            </ul>
+          </li>
+          <li><a href="#actualites">Actualités</a></li>
+          <li class="has-sub">
+            <a href="#">Recherche</a>
+            <ul class="submenu">
+              <li><a href="#">Pôle Innovation et Expertise (PIED)</a></li>
+              <li><a href="#">Chercheurs</a></li>
+              <li><a href="#">École Doctorale (ED)</a></li>
+              <li><a href="#">Ressources numériques</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#vie">Vie étudiante</a>
+            <ul class="submenu">
+              <li><a href="#">Représentation estudiantine</a></li>
+              <li><a href="#">BENO, CRENO, FNE-UN</a></li>
+              <li><a href="#">Vie associative</a></li>
+              <li><a href="#">MSE-UNCHK</a></li>
+              <li><a href="#">ASC ENO</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#">Service à la communauté</a>
+            <ul class="submenu">
+              <li><a href="#">S.A.C proposé par les acteurs internes</a></li>
+              <li><a href="#">S.A.C intégré dans les curricula</a></li>
+              <li><a href="#">S.A.C proposé par les communautés</a></li>
+            </ul>
+          </li>
+          <li class="nav-contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+    <!--SLIDER-->
+    <div class="intro" aria-label="À la une">
+      <div class="slides" id="slides">
+        <div class="slide active"><img src="images/slide1.jpg" alt="Cérémonie de lancement officiel du rapport sur l'IA générative dans l'enseignement supérieur sénégalais, vendredi 16 octobre 2026"></div>
+        <div class="slide"><img src="images/slide2.jpg" alt="Octobre rose : l'UN-CHK se mobilise pour la prévention du cancer du sein"></div>
+        <div class="slide"><img src="images/slide3.jpg" alt="Appel à candidatures : Master international MEDITS, prolongation jusqu'au dimanche 11 octobre 2026"></div>
+        <div class="slide"><img src="images/slide4.jpg" alt="Appel à candidatures : Master en Legaltech et Pratique du Droit (LEPRAD), date limite le 16 octobre 2026"></div>
+      </div>
+
+      <button class="arrow prev" id="prev" aria-label="Précédent">&#10094;</button>
+      <button class="arrow next" id="next" aria-label="Suivant">&#10095;</button>
+      <div class="dots" id="dots"></div>
+    </div>
+
+    <!--BLOCS NOS FORMATIONS_ADMISSION-->
+    <div class="container cta-wrap">
+      <div class="cta-blocks">
+      <a href="#" class="cta cta-orange">
+        <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true"><circle fill="currentColor" cx="12" cy="3.5" r="2"/><path fill="currentColor" d="M2 7h8c1 0 2 .6 2 1.5V21c0-.9-1-1.500-2-1.500H2V7zm20 0h-8c-1 0-2 .6-2 1.5V21c0-.9 1-1.5 2-1.5h8V7z"/></svg>
+        <span class="cta-title">Nos formations</span>
+        <span class="cta-arrow">&rarr;</span>
+      </a>
+      <a href="#" class="cta cta-blue">
+        <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z"/></svg>
+        <span class="cta-title">Admission</span>
+        <span class="cta-arrow">&rarr;</span>
+      </a>
+    </div>
+    </div>
+
+    <!--VISION_VALEURS_AXES-->
+    <div class="val">
+      <div class="container val-grid">
+        <a href="#" class="val"><h2>Vision</h2></a>
+        <a href="#" class="val"><h2>Valeurs</h2></a>
+        <a href="#" class="val"><h2>Axes Stratégiques</h2></a>
+      </div>
+    </div>
+
+    <!--ACTUALITÉS + COMMUNIQUÉS-->
+    <div class="news" id="actualites">
+      <div class="news-header"><div class="container"><h2>Actualités</h2></div></div>
+
+      <div class="container news-grid">
+        <div class="news-articles">
+          <div class="news-articles-grid">
+            <a href="#" class="news-item">
+              <div class="news-photo photo-bw" style="--img: url('images/kane.jpg')" role="img" aria-label="Cheikh Hamidou Kane"></div>
+              <h3 class="news-caption">Rappel à Dieu de M. Cheikh Hamidou KANE, parrain de l'UN-CHK</h3>
+              <time class="news-date" datetime="2026-10-04">4 octobre 2026</time>
+              <p class="news-excerpt">L'Université numérique Cheikh Hamidou Kane (UN-CHK) a appris avec une profonde affliction le rappel à Dieu de son illustre parrain, Monsieur Cheikh Hamidou</p>
+              <span class="read-more"><span>Lire la suite</span><span>&rarr;</span></span>
+            </a>
+            <a href="#" class="news-item">
+              <div class="news-photo photo-color" style="--img: url('images/ouya.jpg')" role="img" aria-label="Pr Samuel Ouya"></div>
+              <h3 class="news-caption">Pr Samuel OUYA, nommé président de la commission « Innovations pédagogiques, Transition numérique et IA » de la C2R d'Afrique de l'Ouest</h3>
+              <time class="news-date" datetime="2026-10-02">2 octobre 2026</time>
+              <p class="news-excerpt">Le Professeur Samuel OUYA, Recteur de l'Université numérique Cheikh Hamidou Kane (UN-CHK), a été nommé à la présidence de la Commission « Innovations</p>
+              <span class="read-more"><span>Lire la suite</span><span>&rarr;</span></span>
+            </a>
+          </div>
+          <p class="more-articles"><a href="#">Plus d'articles</a></p>
+        </div>
+
+        <div class="communiques">
+          <h2 class="com-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18v14H3V5zm2 2v10h14V7H5zm2 2h5v3H7V9zm7 0h3v1.5h-3V9zm0 2.5h3V13h-3v-1.5zM7 13.5h10V15H7v-1.5z"/></svg>
+            <a href="#">Communiqués</a>
+          </h2>
+          <a href="#" class="com-card"><p>Lancement de la deuxième phase de distribution des kits de connectivité à l'intention des étudiants de la Promotion 13</p><time datetime="2026-10-16">16 octobre 2026</time></a>
+          <a href="#" class="com-card"><p>Lancement officiel du premier rapport national sur l'IA générative dans l'enseignement supérieur sénégalais par le groupe de recherche ALIVE</p><time datetime="2026-10-14">14 octobre 2026</time></a>
+          <a href="#" class="com-card"><p>Prolongation – appel à candidatures pour une admission au Master international « Métiers de l'Édition Scientifique » (MEDITS)</p><time datetime="2026-10-01">1 octobre 2026</time></a>
+          <a href="#" class="com-card"><p>Prolongation exceptionnelle des phases 1 et 2 des appels à candidatures pour le recrutement d'auditeurs en formation continue (2025/2026)</p><time datetime="2026-09-30">30 septembre 2026</time></a>
+          <p class="more-articles"><a href="#">Plus de communiqués</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!--UN-CHK EN CHIFFRES-->
+    <div class="stats">
+      <div class="news-header"><div class="container"><h2>UN-CHK en chiffres</h2></div></div>
+      <div class="stats-wide">
+        <div class="stats-grid">
+        <div class="stat-card c1">
+          <div class="stat-top"><span class="stat-number">1ère</span><span class="stat-label">Université publique numérique</span></div>
+          <div class="stat-photo" style="--img: url('images/h3.jpg')"></div>
+        </div>
+        <div class="stat-card c2">
+          <div class="stat-top"><span class="stat-number" data-target="19">19</span><span class="stat-label">Licences</span></div>
+          <div class="stat-photo" style="--img: url('images/h2.jpg')"></div>
+        </div>
+        <div class="stat-card c3">
+          <div class="stat-top"><span class="stat-number" data-target="26">26</span><span class="stat-label">Masters</span></div>
+          <div class="stat-photo" style="--img: url('images/h1.jpg')"></div>
+        </div>
+        </div>
+        <div class="stats-plain">
+          <div class="stat-plain"><span class="stat-number" data-target="73797">73&nbsp;797</span><span class="stat-label">Étudiants</span></div>
+          <div class="stat-plain"><span class="stat-number" data-target="425">425</span><span class="stat-label">PATS</span></div>
+          <div class="stat-plain"><span class="stat-number" data-target="536">536</span><span class="stat-label">Enseignants associés</span></div>
+          <div class="stat-plain"><span class="stat-number" data-target="638">638</span><span class="stat-label">Tuteurs</span></div>
+          </div>
+        <p class="more-stats"><a href="#">Plus de chiffres</a></p>
+      </div>
+    </div>
+
+    <!--VIE ESTUDIANTINE-->
+    <div class="student-life" id="vie">
+      <div class="student-strip">
+        <a href="#" class="tile-photo" style="--img: url('images/etudiant1.jpg')">
+          <h2>Vie estudiantine</h2>
+          <span class="tile-link">En savoir plus</span>
+        </a>
+        <div class="tile-stack">
+          <a href="#" class="tile-light"><span>Coupe du Recteur &rarr;</span></a>
+          <div class="tile-orange"><h3>Nos étudiants créent une communauté dynamique et inclusive</h3></div>
+        </div>
+        <div class="tile-photo" style="--img: url('images/etudiant3.jpg')" role="img" aria-label="Sport universitaire"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--PIED DE PAGE-->
+  <div class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div><h4>A propos de l'UN-CHK</h4><ul><li><a href="#">Présentation</a></li><li><a href="#">Gouvernance</a></li><li><a href="#">Organigramme</a></li><li><a href="#">Directions et Pôles</a></li></ul></div>
+      <div><h4>Nos formations</h4><ul><li><a href="#">Formation initiale</a></li><li><a href="#">Formation continue</a></li></ul></div>
+      <div><h4>Liens utiles</h4><ul><li><a href="https://mesr.gouv.sn">MESRI</a></li><li><a href="https://www.ansts.sn">ANSTS</a></li><li><a href="https://www.lecames.org">CAMES</a></li><li><a href="https://www.anaqsup.sn">ANAQ-Sup</a></li><li><a href="https://www.auf.org">AUF</a></li></ul></div>
+      <div><h4>Contact</h4>
+        <address><p>Cité du savoir – Diamniadio, Castors, avenue Bourguiba, rue n°13</p><p><strong>+221 30 108 41 53 – <a href="mailto:contact@unchk.edu.sn">contact@unchk.edu.sn</a></strong></p></address>
+      </div>
+    </div>
+    <div class="social-row">
+      <div class="container social-row-inner">
+        <ul class="round-socials">
+          <li><a href="https://www.facebook.com/unchksn/" aria-label="Facebook">f</a></li>
+          <li><a href="https://twitter.com/unchk_sn" aria-label="X">X</a></li>
+          <li><a href="https://www.linkedin.com/school/universit%C3%A9-num%C3%A9rique-cheikh-hamidou-kane-un-chk/" aria-label="LinkedIn">in</a></li>
+          <li><a href="https://www.instagram.com/unchk_sn/" aria-label="Instagram">&#9678;</a></li>
+          <li><a href="https://www.youtube.com/@unchk_sn" aria-label="YouTube">&#9654;</a></li>
+        </ul>
+        <p class="motto">Foo Nekk Foofu La !</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>Copyright © 2025 UN-CHK. Tous les droits sont réservés.</p></div></div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Retour en haut">&#8963;</button>
+
+  <script src="accueil.js"></script>
+</body>
+</html>
