@@ -1,0 +1,11 @@
+.marine {
+  background-color: #193550;
+}
+
+.banniere {
+  background: url("images/banniere.jpg") center / cover;
+}
+
+.boite {
+  background-color: rgba(10, 38, 62, 0.75);
+}
