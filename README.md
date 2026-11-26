@@ -1,12 +1,18 @@
-# TP Frontend — Master MICDA 2025-2026
+# Découverte du Sénégal
 
-Ce repository est destiné au dépôt des projets de TP Frontend des étudiants du Master MICDA.
+Projet TP Frontend - Master MICDA 2025-2026
 
-## Consignes
+## Description
+Page d'accueil touristique du Sénégal, réalisée avec Bootstrap 5.
+Elle présente Dakar, le Lac Rose et la Casamance.
 
-- Chaque étudiant ou groupe doit créer sa propre branche.
-- Déposer les fichiers sources du projet.
-- Ajouter un README.md décrivant le projet et ses membres.
-- Créer une Pull Request vers la branche main pour soumettre le travail.
+## Membres
+- Mariama Sane
 
-Enseignant : Dr Abdourahmane BALDÉ
+## Technologies
+- HTML5
+- Bootstrap 5.3 (CDN)
+- Bootstrap Icons
+
+## Lancer le projet
+Ouvrir le fichier `index.html` dans un navigateur.
