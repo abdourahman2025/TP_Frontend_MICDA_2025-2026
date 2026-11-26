@@ -1,12 +1,29 @@
-# TP Frontend — Master MICDA 2025-2026
+# Découverte du Sénégal 🇸🇳
 
-Ce repository est destiné au dépôt des projets de TP Frontend des étudiants du Master MICDA.
+## Présentation du projet
+Ce projet consiste à créer un site web touristique permettant de découvrir les richesses du Sénégal.
 
-## Consignes
+## Objectifs
+- Présenter les destinations touristiques du Sénégal.
+- Mettre en valeur la culture sénégalaise.
+- Encourager le tourisme durable.
 
-- Chaque étudiant ou groupe doit créer sa propre branche.
-- Déposer les fichiers sources du projet.
-- Ajouter un README.md décrivant le projet et ses membres.
-- Créer une Pull Request vers la branche main pour soumettre le travail.
+## Technologies utilisées
+- HTML5
+- Bootstrap 5
+- JavaScript
 
-Enseignant : Dr Abdourahmane BALDÉ
+## Structure du projet
+- `index.html` : page principale du site.
+- `images/` : dossier contenant les images.
+- `package.json` : informations sur les dépendances.
+- `package-lock.json` : versions des dépendances.
+
+## Installation
+1. Télécharger ou cloner le projet.
+2. Ouvrir le dossier dans Visual Studio Code.
+3. Installer les dépendances avec `npm install`.
+4. Ouvrir `index.html` dans un navigateur.
+
+## Réalisé par
+Siga Ndour
