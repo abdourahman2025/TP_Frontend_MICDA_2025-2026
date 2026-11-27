@@ -1,0 +1,36 @@
+
+.bg-navy {
+  background-color: #1b3a57;
+}
+
+
+.hero {
+  min-height: 390px;
+  background-image: url("Images/SENEGAL.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hero-box {
+  background-color: rgba(20, 60, 110, 0.75);
+}
+
+
+.navbar .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+  border-radius: 6px;
+}
+
+
+.card-green  { background-color: #e6f6ea; }
+.card-blue   { background-color: #deecff; }
+.card-yellow { background-color: #fff5d6; }
+
+
+.card-img-top {
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
