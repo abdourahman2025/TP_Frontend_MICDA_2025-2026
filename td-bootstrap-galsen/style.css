@@ -1,0 +1,57 @@
+/* Défilement fluide, sans que la navbar cache les titres */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/* Couleur principale (navbar + footer) */
+.bg-senegal {
+  background-color: #1b3a57;
+}
+
+/* Lien actif du menu */
+.navbar .nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.navbar .nav-link.active {
+  background-color: #0d6efd;
+}
+
+/* Hero avec image de fond */
+.hero {
+  min-height: 290px;
+  background: url("images/hero.jpg") center / cover no-repeat;
+}
+.hero-box {
+  background-color: rgba(13, 80, 140, 0.8);
+}
+
+/* Cartes colorées */
+.card-vert  { background-color: #e6f4ea; }
+.card-bleu  { background-color: #dce9fb; }
+.card-jaune { background-color: #fff3d6; }
+
+.card-img-top {
+  height: 195px;
+  object-fit: cover;
+}
+
+/* Les cartes se soulèvent au survol */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Section des atouts */
+.atouts {
+  background-color: #edf1f5;
+}
+
+/* Footer */
+footer a {
+  text-decoration: underline;
+}
