@@ -1,0 +1,88 @@
+/* =========================================================
+   TD2 – Découverte du Sénégal
+   Styles personnalisés (le reste de la mise en page = Bootstrap)
+   ========================================================= */
+
+/* ---------- Palette « Terre et sable » ---------- */
+:root {
+  --terre: #5a2e1a;        /* brun terre : menu, pied de page */
+  --terre-cuite: #c8553d;  /* bouton principal */
+  --ocre: #e0a339;         /* accent */
+  --sable: #f6ead8;        /* fonds clairs */
+  --sable-clair: #fbf5ec;  /* fond de la section des lieux */
+}
+
+body { color: #3b2a20; }
+h1, h2, h3, h4, h5, .navbar-brand { font-family: "Poppins", sans-serif; }
+
+/* ---------- Classes de couleurs ---------- */
+.bg-terre       { background-color: var(--terre); }
+.bg-sable       { background-color: var(--sable); }
+.bg-sable-clair { background-color: var(--sable-clair); }
+.text-terre       { color: var(--terre); }
+.text-terre-cuite { color: var(--terre-cuite); }
+.text-ocre        { color: var(--ocre); }
+
+/* ---------- Boutons personnalisés ----------
+   On garde la classe .btn de Bootstrap et on change seulement ses variables */
+.btn-terre-cuite {
+  --bs-btn-bg: var(--terre-cuite);  --bs-btn-border-color: var(--terre-cuite);
+  --bs-btn-color: #fff;             --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a8432e;       --bs-btn-hover-border-color: #a8432e;
+  --bs-btn-active-bg: #a8432e;      --bs-btn-active-color: #fff;
+}
+.btn-ocre {
+  --bs-btn-bg: var(--ocre);         --bs-btn-border-color: var(--ocre);
+  --bs-btn-color: var(--terre);     --bs-btn-hover-color: var(--terre);
+  --bs-btn-hover-bg: #c98d26;       --bs-btn-hover-border-color: #c98d26;
+  --bs-btn-active-bg: #c98d26;      --bs-btn-active-color: var(--terre);
+}
+.btn-terre {
+  --bs-btn-bg: var(--terre);        --bs-btn-border-color: var(--terre);
+  --bs-btn-color: #fff;             --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3f1f11;       --bs-btn-hover-border-color: #3f1f11;
+  --bs-btn-active-bg: #3f1f11;      --bs-btn-active-color: #fff;
+}
+
+/* ---------- Barre de navigation ---------- */
+.navbar .nav-link { color: rgba(255, 255, 255, 0.8); }
+.navbar .nav-link:hover { color: #fff; }
+/* Lien de la section affichée (ajouté par js/script.js) */
+.navbar .nav-link.active {
+  color: #fff;
+  background-color: var(--terre-cuite);
+  border-radius: 50rem;
+}
+
+/* ---------- Bandeau (héro) ---------- */
+.hero {
+  /* Monument de la Renaissance africaine */
+  background: url("../images/monument.jpg") center 55% / cover no-repeat;
+  min-height: 440px;
+}
+.hero-box {
+  background-color: rgba(90, 46, 26, 0.8);  /* brun terre transparent */
+  max-width: 560px;                         /* laisse le monument visible à droite */
+  backdrop-filter: blur(2px);
+}
+
+/* ---------- Cartes des lieux ---------- */
+.card-img-top { height: 200px; object-fit: cover; }
+.card-lieu { transition: transform 0.2s, box-shadow 0.2s; }
+.card-lieu:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(90, 46, 26, 0.15) !important;
+}
+
+/* ---------- Points forts ---------- */
+.icone-rond {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Pied de page ---------- */
+.footer-link { color: rgba(255, 255, 255, 0.8); text-decoration: none; }
+.footer-link:hover { color: var(--ocre); }
