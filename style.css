@@ -1,0 +1,531 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+}
+
+/* NAVIGATION */
+.header {
+    width: 100%;
+    height: 85px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    position: relative;
+    z-index: 10;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 205px;
+}
+.logo img {
+    width: 200px;  /* Largeur du logo */
+    height: 70px;  /* Hauteur du logo */
+    object-fit: contain;
+}
+
+/* MENU */
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #111;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 30px 12px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navigation a:hover,
+.navigation .active {
+    background: #0078bd;
+    color: white;
+}
+
+.navigation a span {
+    margin-left: 4px;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 13px;
+    background: #fafafa;
+}
+
+.menu-icon {
+    background: #0085bd;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 19px;
+}
+
+.search {
+    height: 85px;
+    width: 50px;
+    border: none;
+    background: #0083bc;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* CONTENEUR */
+.container {
+    padding: 10px 22px;
+}
+
+/* BANNIÈRE */
+.hero {
+    min-height: 550px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 80% 70%, #004bca 0%, transparent 35%),
+        radial-gradient(ellipse at 65% 60%, #002c93 0%, transparent 45%),
+        linear-gradient(110deg, #001344, #001c61 65%, #003b9e);
+
+    color: white;
+}
+
+/* EFFET LUMINEUX */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 240px;
+    right: -100px;
+    top: 220px;
+    border: 8px solid rgba(0, 155, 255, 0.5);
+    border-radius: 50%;
+    transform: rotate(-12deg);
+    filter: blur(10px);
+    box-shadow: 0 0 35px #00aaff;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 60% 0 0;
+    background-image: radial-gradient(#0042b0 2px, transparent 2px);
+    background-size: 17px 17px;
+    opacity: 0.4;
+}
+
+/* IMAGES LATÉRALES */
+.side-images {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 105px;
+    height: 70%;
+    z-index: 2;
+    background: #9db9e9;
+}
+
+.side-image {
+    height: 33.33%;
+    display: grid;
+    place-items: center;
+    font-size: 45px;
+    border-bottom: 2px solid #567bb2;
+    background: linear-gradient(135deg, #d5e4ff, #668bc1);
+}
+
+/* CONTENU */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 110px 15% 25px;
+}
+
+/* TITRE */
+.main-text {
+    position: relative;
+    z-index: 4;
+}
+
+.main-text h1 {
+    font-size: clamp(25px, 3vw, 38px);
+    line-height: 1.12;
+    font-weight: 900;
+    color: #ff8a00;
+    margin-bottom: 8px;
+}
+
+.main-text p {
+    font-size: clamp(15px, 1.7vw, 22px);
+    line-height: 1.55;
+    font-weight: bold;
+}
+
+/* ILLUSTRATION */
+.illustration {
+    position: absolute;
+    right: 3%;
+    top: 210px;
+    width: 350px;
+    height: 220px;
+    z-index: 1;
+}
+
+.light {
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    border: 5px solid #00bfff;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    filter: blur(5px);
+}
+
+.light-one {
+    top: 40px;
+    left: -50px;
+}
+
+.light-two {
+    top: 90px;
+    left: -70px;
+    border-color: #146eff;
+}
+
+.light-three {
+    top: 130px;
+    left: -30px;
+    border-color: #00e5ff;
+}
+
+.robot {
+    position: absolute;
+    right: 40px;
+    top: 45px;
+    width: 150px;
+    height: 120px;
+    transform: rotate(-15deg);
+}
+
+.robot-head {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 75px;
+    height: 55px;
+    background: linear-gradient(135deg, white, #05c9ff, #074aab);
+    border-radius: 20px 20px 35px 15px;
+    box-shadow: 0 0 25px #00bfff;
+}
+
+.robot-body {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 125px;
+    height: 70px;
+    background: linear-gradient(135deg, #fff, #00b7e8, #0048b4);
+    border-radius: 35px 10px 30px 15px;
+    transform: skew(-20deg);
+    box-shadow: 0 0 20px #00aaff;
+}
+
+.robot-arm {
+    position: absolute;
+    top: 55px;
+    right: -15px;
+    width: 60px;
+    height: 15px;
+    background: #16d6f4;
+    border-radius: 20px;
+    transform: rotate(-35deg);
+}
+
+/* ÉVÉNEMENT */
+.event {
+    position: absolute;
+    top: 75px;
+    right: 4%;
+    text-align: center;
+    z-index: 5;
+}
+
+.event span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.event h2 {
+    color: #ff8700;
+    font-size: 23px;
+}
+
+.event h3 {
+    color: white;
+    font-size: 35px;
+}
+
+.event strong {
+    color: #00a5cf;
+    font-size: 22px;
+}
+
+/* DATE ET QR CODE */
+.bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 60px;
+}
+
+.deadline h2 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.deadline h2:last-child {
+    color: #ff8a00;
+}
+
+.qr-container {
+    text-align: center;
+}
+
+.qr {
+    width: 150px;
+    height: 150px;
+    padding: 8px;
+    background:
+        repeating-conic-gradient(#000 0% 25%, white 0% 50%)
+        0 0 / 12px 12px;
+    border: 4px solid white;
+}
+
+.qr-pattern {
+    width: 100%;
+    height: 100%;
+    background:
+        repeating-conic-gradient(#000 0% 25%, transparent 0% 50%)
+        0 0 / 10px 10px;
+    opacity: 0.9;
+}
+
+.qr-container span {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* CONTACT */
+.contact {
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.contact strong {
+    display: block;
+}
+
+.contact p {
+    margin-top: 4px;
+}
+
+/* PARTENAIRES */
+.partners {
+    position: absolute;
+    bottom: 10px;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.partners div {
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    border-top: 3px solid #00b4d8;
+    padding-top: 5px;
+}
+
+/* FLÈCHES */
+.arrow {
+    position: absolute;
+    top: 48%;
+    z-index: 6;
+    border: none;
+    background: transparent;
+    color: #ffb900;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.left {
+    left: 5px;
+}
+
+.right {
+    right: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+
+    .navigation a {
+        padding: 30px 6px;
+        font-size: 9px;
+    }
+
+    .logo {
+        min-width: 160px;
+    }
+
+    .event {
+        display: none;
+    }
+
+    .hero-content {
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 70px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu {
+        margin-left: auto;
+    }
+
+    .search {
+        height: 70px;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .side-images {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 65px 20px 20px;
+    }
+
+    .main-text h1 {
+        font-size: 26px;
+    }
+
+    .main-text p {
+        font-size: 16px;
+    }
+
+    .main-text p br {
+        display: none;
+    }
+
+    .illustration {
+        top: 280px;
+        right: 5%;
+        transform: scale(0.8);
+    }
+
+    .bottom-content {
+        margin-top: 260px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .deadline h2 {
+        font-size: 19px;
+    }
+
+    .qr {
+        width: 110px;
+        height: 110px;
+    }
+
+    .partners {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 35px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .partners div {
+        font-size: 15px;
+    }
+
+    .contact {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .logo-icon {
+        font-size: 30px;
+    }
+
+    .logo-text {
+        font-size: 8px;
+    }
+
+    .menu {
+        font-size: 10px;
+        padding: 0 8px;
+    }
+
+    .main-text h1 {
+        font-size: 23px;
+    }
+
+    .bottom-content {
+        margin-top: 230px;
+    }
+}
+
+
+
+
